@@ -1,6 +1,6 @@
 Button btn1, btn2, btn3, btn4, btn5;
 int v1, v2, v3, v4, v5; // When the summ of these reaches 10 display the bar chart
-int screen = 0; // For switching screens
+int screen = 0; // For switching screens.... edit
 void setup() {
   size(800, 480);
   
