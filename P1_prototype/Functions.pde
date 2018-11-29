@@ -8,6 +8,9 @@ void frontScreen() {
   playButton.mouseDetect();
   musicButton.mouseDetect();
   settingsButton.mouseDetect();
+  playButton_hover.playHover();
+  musicButton_hover.musicHover();
+  settingsButton_hover.settingsHover();
 }
 
 void playScreen() {
@@ -23,7 +26,7 @@ void musicScreen() {
 }
 
 void settingsScreen() {
-  background(100); 
+  image(mw_settingsBackground, width/2, height/2);
   image(mw_backBtn, width/2, 15);
   backBtn.mouseDetect();
 }
