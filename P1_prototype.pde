@@ -1,47 +1,46 @@
 //Milky Wavezzz
 
 //images
-PImage mk_background;
-PImage mk_vignette;
-PImage mk_logo;
-PImage mk_playButton;
-PImage mk_musicButton;
-PImage mk_settingsButton;
+PImage mw_background;
+PImage mw_vignette;
+PImage mw_logo;
+PImage mw_playButton;
+PImage mw_musicButton;
+PImage mw_settingsButton;
 
 //variables
 int screen = 0;
 
 void setup() {
-
+  imageMode(CENTER);
   size(405, 720);
 
 //load images
-  mk_background = loadImage("mk_background.png");
-  mk_vignette = loadImage("mk_vignette.png");
-  mk_logo = loadImage("mk_logo.png");
-  mk_playButton = loadImage("mk_playButton.png");
-  mk_musicButton = loadImage("mk_musicButton.png");
-  mk_settingsButton = loadImage("mk_settingsButton.png");
+  mw_background = loadImage("mw_background.png");
+  mw_vignette = loadImage("mw_vignette.png");
+  mw_logo = loadImage("mw_logo.png");
+  mw_playButton = loadImage("mw_playButton.png");
+  mw_musicButton = loadImage("mw_musicButton.png");
+  mw_settingsButton = loadImage("mw_settingsButton.png");
+  
+//resizing the images
+  mw_background.resize(405, 720);
+  mw_vignette.resize(405, 720);
+  mw_logo.resize(313, 166);
+  mw_playButton.resize(256, 47);
+  mw_musicButton.resize(256, 47);
+  mw_settingsButton.resize(256, 47);
 }
 
 void draw() {
 
   //front page
   if (screen == 0) {
-    imageMode(CORNER);
-    mk_background.resize(405, 720);
-    image(mk_background, 0, 0);
-    mk_vignette.resize(405, 720);
-    image(mk_vignette, 0, 0);
-    imageMode(CENTER);
-    mk_logo.resize(313, 166);
-    image(mk_logo, width/2 + 20, 200);
-    mk_playButton.resize(256, 47);
-    image(mk_playButton, width/2, 492);
-    mk_musicButton.resize(256, 47);
-    image(mk_musicButton, width/2, 552);
-    mk_settingsButton.resize(256, 47);
-    image(mk_settingsButton, width/2, 612);
-    
+    image(mw_background, width/2, height/2);
+    image(mw_vignette, width/2, height/2);
+    image(mw_logo, width/2 + 20, 200);
+    image(mw_playButton, width/2, 492);
+    image(mw_musicButton, width/2, 552);
+    image(mw_settingsButton, width/2, 612);
   }
 }
