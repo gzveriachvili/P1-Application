@@ -14,6 +14,10 @@ PImage mw_backBtn;
 PImage mw_musicButton_hover;
 PImage mw_settingsButton_hover;
 
+//This is for the settingspage with the color wheel
+float foregroundHue = 0;
+float backgroundHue;
+
 //variables
 int screen = 0;
 
@@ -85,7 +89,7 @@ void draw() {
 }
 
 void mouseReleased() {
-  if (playButton.mouseDetect() && screen == 0) {
+  if (playButton.mouseDetect()) {
     screen = 1;
   }
   if (screen == 1) {
@@ -93,7 +97,7 @@ void mouseReleased() {
       screen = 0;
     }
   }
-  if (musicButton.mouseDetect() && screen == 0) {
+  if (musicButton.mouseDetect()) {
     screen = 2;
   }
   if (screen == 2) {
@@ -101,7 +105,7 @@ void mouseReleased() {
       screen = 0;
     }
   }
-  if (settingsButton.mouseDetect() && screen == 0) {
+  if (settingsButton.mouseDetect()) {
     screen = 3;
   }
     if (screen == 3) {
