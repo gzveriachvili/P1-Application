@@ -89,7 +89,7 @@ void draw() {
 }
 
 void mouseReleased() {
-  if (playButton.mouseDetect()) {
+  if (playButton.mouseDetect() && screen == 0) {
     screen = 1;
   }
   if (screen == 1) {
@@ -97,7 +97,7 @@ void mouseReleased() {
       screen = 0;
     }
   }
-  if (musicButton.mouseDetect()) {
+  if (musicButton.mouseDetect() && screen == 0) {
     screen = 2;
   }
   if (screen == 2) {
@@ -105,7 +105,7 @@ void mouseReleased() {
       screen = 0;
     }
   }
-  if (settingsButton.mouseDetect()) {
+  if (settingsButton.mouseDetect() && screen == 0) {
     screen = 3;
   }
     if (screen == 3) {
