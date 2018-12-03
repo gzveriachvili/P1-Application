@@ -12,22 +12,21 @@ class Buttons {
       return false;
     }
   }
- void playHover() {
-  if (mouseX > Posi.x - Size.x/2 && mouseX< Posi.x + Size.x/2 && mouseY > Posi.y - Size.y/2 && mouseY < Posi.y + Size.y/2) {
-   image(mw_playButton_hover, width/2, 492);
+  void playHover() {
+    if (mouseX > Posi.x - Size.x/2 && mouseX< Posi.x + Size.x/2 && mouseY > Posi.y - Size.y/2 && mouseY < Posi.y + Size.y/2) {
+      image(mw_playButton_hover, width/2, 492);
+    }
   } 
-} 
 
-void musicHover() {
-  if (mouseX > Posi.x - Size.x/2 && mouseX< Posi.x + Size.x/2 && mouseY > Posi.y - Size.y/2 && mouseY < Posi.y + Size.y/2) {
-   image(mw_musicButton_hover, width/2, 552);
-  } 
-}
+  void musicHover() {
+    if (mouseX > Posi.x - Size.x/2 && mouseX< Posi.x + Size.x/2 && mouseY > Posi.y - Size.y/2 && mouseY < Posi.y + Size.y/2) {
+      image(mw_musicButton_hover, width/2, 552);
+    }
+  }
 
-void settingsHover() {
-  if (mouseX > Posi.x - Size.x/2 && mouseX< Posi.x + Size.x/2 && mouseY > Posi.y - Size.y/2 && mouseY < Posi.y + Size.y/2) {
-   image(mw_settingsButton_hover, width/2, 612);
-  } 
-}
-
+  void settingsHover() {
+    if (mouseX > Posi.x - Size.x/2 && mouseX< Posi.x + Size.x/2 && mouseY > Posi.y - Size.y/2 && mouseY < Posi.y + Size.y/2) {
+      image(mw_settingsButton_hover, width/2, 612);
+    }
+  }
 }
