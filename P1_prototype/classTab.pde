@@ -29,4 +29,17 @@ class Buttons {
       image(mw_settingsButton_hover, width/2, 612);
     }
   }
+  void display() {
+    fill(0);
+    rect(Posi.x, Posi.y, 257, 40);
+    rectMode(CENTER);
+   
+    for (int i = 0; i<musicNames.length; i++) {
+      textFont(tofinoLight);
+      fill(255);
+      textAlign(CENTER);
+      text(musicNames[i], width/2, 275+i*47);
+      
+    }
+  }
 }
